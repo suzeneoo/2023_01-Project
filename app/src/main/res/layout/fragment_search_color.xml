@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_search_shape2"
+    android:layout_margin="20dp"
+    android:background="@drawable/gridline">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="250dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="25dp"
+            >
+
+            <android.widget.Button
+                android:id="@+id/red"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="@string/red"
+                android:background="@drawable/red"/>
+
+            <android.widget.Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:text="@string/orange"
+                android:background="@drawable/orange"/>
+
+            <android.widget.Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:text="@string/yellow"
+                android:background="@drawable/yellow"/>
+
+            <android.widget.Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:text="@string/green"
+                android:background="@drawable/green"/>
+
+            <android.widget.Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="@string/blue"
+                android:background="@drawable/blue"/>
+
+            <android.widget.Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:text="@string/purple"
+                android:background="@drawable/purple"/>
+
+            <android.widget.Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:text="@string/black"
+                android:textColor="@color/white"
+                android:background="@drawable/black"/>
+
+            <android.widget.Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:text="@string/gray"
+                android:background="@drawable/gray"/>
+
+        </GridLayout>
+
+    </GridLayout>
+
+</LinearLayout>

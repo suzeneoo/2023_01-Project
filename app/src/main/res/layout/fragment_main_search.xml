@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainMenuSearch">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/search_background"
+            android:drawableTint="@android:color/darker_gray"
+            android:hint="@string/getsearch"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingStart="80dp"
+            android:paddingEnd="20dp"
+            android:privateImeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            app:backgroundTint="#FFFFFF"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:baselineAligned="false"
+
+            android:drawableLeft="@drawable/searchbtn"
+            android:paddingStart="10dp"
+            android:contentDescription="searchbtn"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="75dp"
+        android:text="@string/medicine_teacher"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="InvalidId" />
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="85dp"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLabTest"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5FD1C6"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="66dp"
+                    android:src="@drawable/words" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBuymedicne"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_words"
+                    app:backgroundTint="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#000000"
+                    android:baselineAligned="false"
+                    android:paddingStart="20dp"
+                    android:text="@string/word"
+                    android:textSize="18dp"
+                    android:textColor="#00897B" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLab2"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_shape"
+                    app:backgroundTint="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#000000"
+                    android:baselineAligned="false"
+                    android:paddingStart="20dp"
+                    android:text="@string/shape"
+                    android:textSize="18dp"
+                    android:textColor="#00897B" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDoctor"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5FD0C5"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="68dp"
+                    android:src="@drawable/shapes" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardOrderDetail"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5FCFC4"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/color" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardExitHome"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_color"
+                    app:backgroundTint="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="#000000"
+                    android:baselineAligned="false"
+                    android:textSize="18dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/Color"
+                    android:textColor="#00897B" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</FrameLayout>

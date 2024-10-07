@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainMenu"
+    android:layout_marginBottom="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="134dp"
+            android:layout_height="121dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/_59833" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#5FD1C6"
+            android:text="개인 복용 금기 성분"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#5FD1C6"
+            android:text="버전"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#5FD1C6"
+            android:textColor="@color/black"
+            android:text="설정"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#5FD1C6"
+            android:textColor="@color/black"
+            android:text="로그아웃"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#5FD1C6"
+            android:textColor="@color/black"
+            android:text="회사소개"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="125dp"
+            android:text="사용자 이름"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="153dp"
+            android:backgroundTint="#00ff0000"
+            android:text="프로필 더보기"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#D3D3D3"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="610dp"
+            android:text="v1.0.0"
+            android:textColor="#D3D3D3"
+            android:textColorHint="#D3D3D3" />
+
+</FrameLayout>
+
+
+

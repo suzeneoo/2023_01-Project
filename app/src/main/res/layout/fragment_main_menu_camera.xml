@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainMenuCamera"
+    android:layout_marginBottom="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--Button: Take Image from Camera, Gallery-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_inputImage"
+            android:text="Take Image"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="5dp"
+            app:cornerRadius="5dp"
+            android:layout_weight="1"
+            app:icon="@drawable/baseline_add_a_photo_24"
+            android:backgroundTint="#5FD1C6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--Button: Recognize text from the image we took from Camera/Gallery-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_recognizedText"
+            android:text="Recognize Text"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#5FD1C6"
+            app:cornerRadius="5dp"
+            android:layout_weight="1"
+            app:icon="@drawable/baseline_document_scanner_24"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--ImageView: Show image we took from Camera/Gallery-->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_image"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/_705200"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120dp"
+                android:adjustViewBounds="true"
+                app:strokeWidth="2dp"/>
+
+            <!--TextView: Label to show that below will be the recognized text shown-->
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Recognized Text:"/>
+
+            <!--EditText: Show the recognized text, You may use TextView instead-->
+            <EditText
+                android:id="@+id/et_recognizedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>
